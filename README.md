@@ -5,7 +5,6 @@ A minimalist iOS Home Screen/Lock Screen widget built with [Scriptable](https://
 
 <p align="center">
   <img src="not_practiced.png" alt="widget preview - not studied" width="300" />
-  <br>
   <img src="practiced.png" alt="widget preview - studied" width="300" />
 </p> 
 
