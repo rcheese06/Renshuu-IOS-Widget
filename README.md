@@ -1,7 +1,7 @@
 # Renshuu-iOS-Widget
 A minimalist iOS Home Screen/Lock Screen widget built with [Scriptable](https://scriptable.app) that helps you stay consistent with your Japanese language learning via [Renshuu.org](https://www.renshuu.org/).
 
-## 📱 Widget Preview
+## Widget Preview
 
 <p align="center">
   <img src="assets/preview.png" alt="widget preview - not studied" width="300" />
@@ -12,7 +12,7 @@ A minimalist iOS Home Screen/Lock Screen widget built with [Scriptable](https://
 
 ---
 
-## ✨ Features
+## Features
 
 - Displays the current day of the week in Japanese (e.g. 水曜日 for Wednesday)
 - Displays your Renshuu Level
@@ -21,7 +21,7 @@ A minimalist iOS Home Screen/Lock Screen widget built with [Scriptable](https://
 
 ---
 
-## ⚙️ Requirements
+## ⚙Requirements
 
 - iOS 14+
 - [Scriptable](https://apps.apple.com/app/scriptable/id1405459188)
@@ -30,7 +30,7 @@ A minimalist iOS Home Screen/Lock Screen widget built with [Scriptable](https://
 
 ---
 
-## 🚀 Setup Instructions
+## Setup Instructions
 
 1. **Install Scriptable** from the App Store.
 2. **Get your Renshuu API key:**
