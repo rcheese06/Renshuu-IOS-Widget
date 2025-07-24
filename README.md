@@ -21,7 +21,7 @@ A minimalist iOS Home Screen/Lock Screen widget built with [Scriptable](https://
 
 ---
 
-## ⚙Requirements
+## Requirements
 
 - iOS 14+
 - [Scriptable](https://apps.apple.com/app/scriptable/id1405459188)
