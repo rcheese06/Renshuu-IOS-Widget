@@ -36,7 +36,7 @@ A minimalist iOS Home Screen/Lock Screen widget built with [Scriptable](https://
    - Go to **Settings > External Access**
    - Generate or copy your API key
 3. **Import the Script:**
-   - Open Scriptable → Tap `+` → Paste code from `widget.js`
+   - Open Scriptable → Tap `+` → Paste code from `script.js`
    - Replace the placeholder `API_KEY` in the script with your actual Renshuu API key
 4. **Add the widget to your Home Screen:**
    - Long press the screen → `+` icon → Select Scriptable
