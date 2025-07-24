@@ -6,20 +6,21 @@ stack.layoutHorizontally();
 const stackLeft = stack.addStack();
 stackLeft.layoutVertically();
 
-const daysOfWeek = {
+const daysOfWeek = { //dictionary of the days of the week
   0:    {full: "日曜日", char: "日", rom: "Nichiyoubi"},
   1:    {full: "月曜日", char: "月", rom: "Getsuyoubi"},
   2:   {full: "火曜日", char: "火", rom: "Kayoubi"},
   3: {full: "水曜日", char: "水", rom: "Suiyoubi"},
   4:  {full: "木曜日", char: "木", rom: "Mokuyoubi"},
   5:    {full: "金曜日", char: "金", rom: "Kinyoubi"},
-  6:  {full: "土曜日", char: "土", rom: "Doyoubi"}
+  6:  {full: "土曜日", char: "土", rom: "Doyoubi"},
 };
 
 const now = new Date();
 const today = now.getDay();
-const todayInfo = daysOfWeek[today];
+const todayInfo = daysOfWeek[today]; //get today
 
+//day of the week
 const stackKanji = stackLeft.addStack();
 stackKanji.layoutHorizontally();
 stackKanji.addSpacer();
@@ -53,7 +54,7 @@ stack.addSpacer(10);
 const stackRight = stack.addStack();
 stackRight.layoutVertically();
 
-const key = "YOUR_API_KEY";
+const key = "API_KEY"; //sub-in with your actual renshuu API key
 
 async function getProfile() {
   let req = new Request("https://eu.renshuu.org/api/v1/profile");
@@ -81,7 +82,7 @@ if (data.studied.today_all == 0) {
   
   const kaoReq = new Request(data.kao);
   const kao = await kaoReq.loadImage();
-  stackRight.addImage(kao);
+  stackRight.addImage(kao); //displays your kao-chan instead of kanji/vocab/grammar stats
 }
 else {
   const practicedToday = stackRight.addText("You have practiced today!");
@@ -91,7 +92,8 @@ else {
   
   const stackStats = stackRight.addStack();
   stackStats.layoutHorizontally();
-  
+
+  //kanji stats
   const kanji = stackStats.addStack();
   kanji.layoutVertically();
   const kanjiTitle = kanji.addText("Kanji");
@@ -105,7 +107,8 @@ else {
   todayKanji.textColor = Color.white();
   
   stackStats.addSpacer(5);
-  
+
+  //vocab stats
   const vocab = stackStats.addStack();
   vocab.layoutVertically();
   const vocabTitle = vocab.addText("Vocab");
@@ -119,7 +122,8 @@ else {
   todayVocab.textColor = Color.white();
   
   stackStats.addSpacer(5);
-  
+
+  //grammar stats
   const grammar = stackStats.addStack();
   grammar.layoutVertically();
   const grammarTitle = grammar.addText("Grammar");
